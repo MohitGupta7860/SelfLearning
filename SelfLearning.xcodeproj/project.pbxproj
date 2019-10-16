@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -114,8 +114,13 @@
 		3CAFA6132356974D0051234F /* SelfLearning */ = {
 			isa = PBXGroup;
 			children = (
+				3CBDD5192356A66D0054DC56 /* Model */,
+				3CBDD5182356A6640054DC56 /* Coordinator */,
+				3CBDD5172356A65C0054DC56 /* View */,
+				3CBDD5162356A6530054DC56 /* ViewController */,
+				3CBDD5152356A6460054DC56 /* ServiceLayer */,
+				3CBDD5142356A62C0054DC56 /* ViewModel */,
 				3CAFA6142356974D0051234F /* AppDelegate.swift */,
-				3CAFA6162356974D0051234F /* ViewController.swift */,
 				3CAFA6182356974D0051234F /* Main.storyboard */,
 				3CAFA61B235697500051234F /* Assets.xcassets */,
 				3CAFA61D235697500051234F /* LaunchScreen.storyboard */,
@@ -142,6 +147,49 @@
 			path = SelfLearningUITests;
 			sourceTree = "<group>";
 		};
+		3CBDD5142356A62C0054DC56 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3CBDD5152356A6460054DC56 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		3CBDD5162356A6530054DC56 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CAFA6162356974D0051234F /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3CBDD5172356A65C0054DC56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3CBDD5182356A6640054DC56 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3CBDD5192356A66D0054DC56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		58955F7A48C34B695097E600 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +200,6 @@
 				86E7FD9F450E49CB3378D0CB /* Pods-SelfLearningTests.debug.xcconfig */,
 				00026FC7C4EEC0A8067E5F4E /* Pods-SelfLearningTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
