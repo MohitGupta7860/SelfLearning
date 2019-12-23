@@ -10,9 +10,6 @@ import Foundation
 
 protocol FarmerViewable {
     func getFarmerData()
-    var test1: String
-    var test2: String
-    var test: String
     var farmerList: [Farmer] { get set }
 }
 
@@ -22,6 +19,13 @@ class FarmerViewModel: FarmerViewable {
     init(farmerList: [Farmer]) {
         self.farmerList = farmerList
     }
+    
+    func getFarmerData1()  {
+          guard let url = Bundle.main.url(forResource: "farmer", withExtension: "json") else { return }
+          guard let data = try? Data(contentsOf: url) else { return }
+          guard let jsonData = try? JSONDecoder().decode(FarmerList.self, from: data) as FarmerList else { return }
+          farmerList = jsonData.farmers
+      }
     
     func getFarmerData()  {
         guard let url = Bundle.main.url(forResource: "farmer", withExtension: "json") else { return }
