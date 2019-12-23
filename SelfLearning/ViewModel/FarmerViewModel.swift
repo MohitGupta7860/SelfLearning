@@ -13,6 +13,11 @@ protocol FarmerViewable {
     var farmerList: [Farmer] { get set }
 }
 
+test conflict {
+    
+}
+
+
 class FarmerViewModel: FarmerViewable {
     var farmerList = [Farmer]()
     
@@ -23,6 +28,7 @@ class FarmerViewModel: FarmerViewable {
     func getFarmerData()  {
         guard let url = Bundle.main.url(forResource: "farmer", withExtension: "json") else { return }
         guard let data = try? Data(contentsOf: url) else { return }
+        test conflict
         guard let jsonData = try? JSONDecoder().decode(FarmerList.self, from: data) as FarmerList else { return }
         farmerList = jsonData.farmers
     }
