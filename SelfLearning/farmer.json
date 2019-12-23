@@ -1,0 +1,19 @@
+{"farmers":[{
+        "first_Name": "Mohit",
+        "lastName": "Gupta",
+        "phoneNumber": "9899519438",
+        "harvestName": "Rice"
+    },
+    {
+        "first_Name": "Rohit",
+        "lastName": "Gupta",
+        "phoneNumber": "9899519438",
+        "harvestName": "Rice"
+    },
+    {
+        "first_Name": "Amit",
+        "lastName": "Gupta",
+        "phoneNumber": "9899519438",
+        "harvestName": "Rice"
+    }
+]}
