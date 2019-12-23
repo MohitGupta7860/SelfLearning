@@ -25,7 +25,27 @@ class FarmerViewModel: FarmerViewable {
           guard let jsonData = try? JSONDecoder().decode(FarmerList.self, from: data) as FarmerList else { return }
           farmerList = jsonData.farmers
       }
-    
+      
+    func getFarmerData34()  {
+        guard let url = Bundle.main.url(forResource: "farmer", withExtension: "json") else { return }
+        guard let data = try? Data(contentsOf: url) else { return }
+        guard let jsonData = try? JSONDecoder().decode(FarmerList.self, from: data) as FarmerList else { return }
+        farmerList = jsonData.farmers
+    }
+      
+    func getFarmerData43()  {
+        guard let url = Bundle.main.url(forResource: "farmer", withExtension: "json") else { return }
+        guard let data = try? Data(contentsOf: url) else { return }
+        guard let jsonData = try? JSONDecoder().decode(FarmerList.self, from: data) as FarmerList else { return }
+        farmerList = jsonData.farmers
+    }
+      
+    func getFarmerData44()  {
+        guard let url = Bundle.main.url(forResource: "farmer", withExtension: "json") else { return }
+        guard let data = try? Data(contentsOf: url) else { return }
+        guard let jsonData = try? JSONDecoder().decode(FarmerList.self, from: data) as FarmerList else { return }
+        farmerList = jsonData.farmers
+    }
     func getFarmerData()  {
         guard let url = Bundle.main.url(forResource: "farmer", withExtension: "json") else { return }
         guard let data = try? Data(contentsOf: url) else { return }
