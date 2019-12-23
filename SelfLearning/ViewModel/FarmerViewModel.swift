@@ -10,6 +10,9 @@ import Foundation
 
 protocol FarmerViewable {
     func getFarmerData()
+    var test1: String
+    var test2: String
+    var test: String
     var farmerList: [Farmer] { get set }
 }
 
