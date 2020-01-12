@@ -54,4 +54,5 @@ class FarmerViewModel: FarmerViewable {
     }
     
     //Test 1
+    //Test2
 }
