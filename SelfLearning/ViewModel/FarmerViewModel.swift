@@ -52,4 +52,6 @@ class FarmerViewModel: FarmerViewable {
         guard let jsonData = try? JSONDecoder().decode(FarmerList.self, from: data) as FarmerList else { return }
         farmerList = jsonData.farmers
     }
+    
+    //Test 1
 }
